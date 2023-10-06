@@ -7,7 +7,7 @@ ed utilizzare una funzione in python.
 Modifica di una lista aggiungendo e/o eliminando un elemento
 '''
 
-def showListContent(lst_fruits):
+def showListContent(lst_fruits: list) -> None:
     print("*******************************")
     print("Contenuto del paniere")
     for x in lst_fruits:
