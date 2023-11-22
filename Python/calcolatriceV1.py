@@ -20,6 +20,18 @@ def div(num1, num2):
     risultato_div = num1/num2
     return risultato_div
 
+def percentuale(num1, num2):
+    '''
+    Prende in input due parametri, il primo è la percentuale, il secondo parametro
+    è il valore del quale voglio trovare la percentuale.
+    Esempio percentuale(20, 100) -> calcola il 20% di 100
+    '''
+    risultato = (num1*num2)/100
+    return risultato
+    
+
+
+
 
 num1 = 0
 num2 = 0
@@ -38,27 +50,33 @@ while(sceltamenu != -1 or exit != True):
     num2 = int(input("Inserisci il secondo numero: "))
     
     
-    print("Lista operazioni: \n 1 - Add\n 2 - Sub\n 3 - Mult\n 4 - Div\n Scegli -1 per uscire\n")
+    print("Lista operazioni: \n 1 - Add\n 2 - Sub\n 3 - Mult\n 4 - Div\n 5 - Percentuale\n Scegli -1 per uscire\n")
     sceltamenu = int(input("Scegli l'operazione che vuoi effettuare sui due numeri dati: "))
     if(sceltamenu == 1):
         risultato = add(num1, num2)
         exit = True
-        print("Risultato " + str(risultato))
+        print("Risultato addizione: " + str(risultato))
     
     if(sceltamenu == 2):
         risultato = sottr(num1, num2)
         exit = True
-        print("Risultato " + str(risultato))
+        print("Risultato sottrazione: " + str(risultato))
     
     if(sceltamenu == 3):
         risultato = mult(num1, num2)
         exit = True
-        print("Risultato " + str(risultato))
+        print("Risultato moltiplicazione: " + str(risultato))
     
     if(sceltamenu == 4):
         risultato_real = div(num1, num2)
         exit = True
-        print("Risultato " + str(risultato_real))
+        print("Risultato divisione: " + str(risultato_real))
+    
+    if(sceltamenu == 5):
+        risultato_real = percentuale(num1, num2)
+        exit = True
+        print(f"Il {num1}% di {num2} è: {risultato_real}")
+        # print("Risultato percentuale: " + str(risultato_real))
     
     if(sceltamenu == -1):
         exit = True
