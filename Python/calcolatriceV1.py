@@ -38,7 +38,7 @@ while(sceltamenu != -1 or exit != True):
     num2 = int(input("Inserisci il secondo numero: "))
     
     
-    print("Lista operazioni: \n 1 - Add\n 2 - Sub\n 3 - Mult\n 4 - Div\n")
+    print("Lista operazioni: \n 1 - Add\n 2 - Sub\n 3 - Mult\n 4 - Div\n Scegli -1 per uscire\n")
     sceltamenu = int(input("Scegli l'operazione che vuoi effettuare sui due numeri dati: "))
     if(sceltamenu == 1):
         risultato = add(num1, num2)
