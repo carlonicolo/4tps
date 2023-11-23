@@ -1,8 +1,11 @@
 # Funzioni
 
 # Addizione
-def add(num1, num2):
-    risultato_add = num1 + num2
+def add(addendi):
+    '''
+    Somma di tutti gli elementi presenti nella lista addendi
+    '''
+    risultato_add = sum(addendi)
     return risultato_add
 
 # Sottrazione
@@ -56,9 +59,15 @@ while(sceltamenu != -1 or exit != True):
     sceltamenu = int(input("Scegli l'operazione che vuoi effettuare sui due numeri dati: "))
     
     if(sceltamenu == 1):
-        num1 = int(input("Inserisci il primo numero: "))
-        num2 = int(input("Inserisci il secondo numero: "))
-        risultato = add(num1, num2)
+        lst_addendi = []
+        num_addendi= int(input("Quanti addendi vuoi aggiungere ? "))
+
+        for i in range(num_addendi):
+            addendo = int(input("Inserisci il numero: "))
+            lst_addendi.append(addendo)
+            print(lst_addendi)
+        
+        risultato = add(lst_addendi)
         exit = True
         print("Risultato addizione: " + str(risultato))
     
