@@ -5,7 +5,14 @@ public class Main {
         //System.out.println("Hello world!");
         Animale pluto = new Animale(5,80,4);
         pluto.abbaia();
-        String s = pluto.greeting("4INF");
+        String s = pluto.salutaNome("4INF");
         System.out.println(s);
+
+        System.out.println("###############");
+
+        Animale zig = new Animale("Zig",5,80,4);
+        zig.abbaia();
+        String sal = zig.salutaNome("Kevin");
+        System.out.println(sal);
     }
 }
