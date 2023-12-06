@@ -1,4 +1,5 @@
 import primaLezione.*;
+import secondaLezione.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,5 +15,11 @@ public class Main {
         zig.abbaia();
         String sal = zig.salutaNome("Kevin");
         System.out.println(sal);
+
+        Veicolo macchina1 = new Veicolo(2023, "elettrica", "Tesla");
+        System.out.println(macchina1);
+        System.out.println("Marca: " + macchina1.getMarca());
+
+
     }
 }
