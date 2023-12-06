@@ -3,6 +3,7 @@ def somma(num1, num2):
     
     return risultato
 
+
 # Main
 num1 = int(input("Inserisci il primo numero: "))
 print("Valore num1 " + str(num1))
