@@ -4,3 +4,6 @@ Codice dei progetti e dei tutorial utilizzati per lo studio dei linguaggi utiliz
 
 - [Python](Python/README.md)
 - [Java](Java/README.md)
+- [Go](Go/README.md)
+- [C++](C++/README.md)
+- [PHP](PHP/README.md)
