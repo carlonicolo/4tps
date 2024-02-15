@@ -27,5 +27,37 @@ public class Animale {
         return saluto;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getEta() {
+        return eta;
+    }
+
+    public void setEta(int eta) {
+        this.eta = eta;
+    }
+
+    public float getPeso() {
+        return peso;
+    }
+
+    public void setPeso(float peso) {
+        this.peso = peso;
+    }
+
+    public int getNum_zampe() {
+        return num_zampe;
+    }
+
+    public void setNum_zampe(int num_zampe) {
+        this.num_zampe = num_zampe;
+    }
+
 
 }

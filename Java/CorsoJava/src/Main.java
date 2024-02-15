@@ -9,6 +9,13 @@ public class Main {
         String s = pluto.salutaNome("4INF");
         System.out.println(s);
 
+        System.out.println("età pluto prima ");
+        System.out.println(pluto.getEta());
+        pluto.setEta(8);
+        System.out.println("età pluto dopo ");
+        System.out.println(pluto.getEta());
+
+
         System.out.println("###############");
 
         Animale zig = new Animale("Zig",5,80,4);
@@ -16,9 +23,9 @@ public class Main {
         String sal = zig.salutaNome("Kevin");
         System.out.println(sal);
 
-        Veicolo macchina1 = new Veicolo(2023, "elettrica", "Tesla");
-        System.out.println(macchina1);
-        System.out.println("Marca: " + macchina1.getMarca());
+        //Veicolo macchina1 = new Veicolo(2023, "elettrica", "Tesla");
+        //System.out.println(macchina1);
+        //System.out.println("Marca: " + macchina1.getMarca());
 
 
     }
