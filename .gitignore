@@ -1,5 +1,7 @@
 .vscode/*
 
+*.o
+
 *.exe
 
 # Byte-compiled / optimized / DLL files

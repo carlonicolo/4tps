@@ -11,6 +11,9 @@ class Bicycle
         void speedUp(int inc);
         void applyBrakes(int dec);
         void printStates();
+        void setSpeed(int s);
+        int getSpeed();
+        void doubleSpeed();
 
     private:
         int cadence;

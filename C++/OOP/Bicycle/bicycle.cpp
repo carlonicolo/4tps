@@ -17,12 +17,23 @@ Bicycle::Bicycle(int c, int g, int s)
     speed = s;
 }
 
+void Bicycle::setSpeed(int s){ speed = s; }
+int Bicycle::getSpeed(){return speed;}
+
 void Bicycle::changeCadence(int c) { cadence = c; }
 void Bicycle::changeGear(int g) { gear = g; }
 void Bicycle::speedUp(int inc) { speed += inc; }
 void Bicycle::applyBrakes(int dec) { speed -= dec; }
+
 void Bicycle::printStates()
 {
     cout << "cadence: " << cadence << "\nspeed:"
-         << speed << "\ngear:" << gear;
+         << speed << "\ngear:" << gear << endl;
 }
+
+void Bicycle::doubleSpeed()
+{
+    speed = speed * 2;
+    cout << "Bruummm --->>>> " << speed << endl;
+}
+

@@ -6,3 +6,6 @@ main : main.o bicycle.o
 
 clean : 
 	rm *.o *.exe
+
+cleanObject : 
+	rm *.o
