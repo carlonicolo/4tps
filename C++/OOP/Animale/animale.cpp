@@ -42,3 +42,24 @@ string Animale::getNome()
 {
     return nome;
 }
+
+int Animale::getEta()
+{
+    return eta;
+}
+
+int Animale::getNumeroZampe()
+{
+    return numero_zampe;
+}
+
+float Animale::getPeso()
+{
+    return peso;
+}
+
+
+void Animale::setEta(int s_eta){ eta = s_eta; }
+void Animale::setNumeroZampe(int s_numzampe){ numero_zampe = s_numzampe; }
+void Animale::setPeso(float s_peso){ peso = s_peso; }
+void Animale::setNome(string s_nome){ nome = s_nome; }

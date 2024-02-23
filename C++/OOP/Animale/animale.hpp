@@ -10,10 +10,18 @@ class Animale
         //Aniamle();
         Animale(string nome,int eta, int numero_zampe);
         Animale(int eta, int numero_zampe, float peso, string nome);
-        //int getEta();
-        //int getNumero_zampe();
-        //float getPeso();
+        
+        // get
+        int getEta();
+        int getNumeroZampe();
+        float getPeso();
         string getNome();
+        
+        // set
+        void setEta(int eta);
+        void setNumeroZampe(int numzampe);
+        void setPeso(float peso);
+        void setNome(string nome);
     /*
         Bicycle();
         Bicycle(int c, int g, int s);
