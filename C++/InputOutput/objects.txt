@@ -1,0 +1,9 @@
+rectangle1
+10
+20
+rectangle2
+20
+10
+rectangle3
+30
+40
