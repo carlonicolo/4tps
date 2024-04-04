@@ -7,3 +7,6 @@ rectangle2
 rectangle3
 30
 40
+Rettangolo X
+30
+40

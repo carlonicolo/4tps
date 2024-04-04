@@ -90,5 +90,6 @@ int main()
     {
         std::cout << "Couldn't open file\n";
     }
+    Rectangle r1("RettangoloPippo", 20, 30);
     return 0;
 }
