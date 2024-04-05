@@ -4,6 +4,9 @@ import pytest
 
 def test_somma():
     assert op.somma(10, 11) == 21
+    assert op.somma(20, 21) == 41
+    assert op.somma(-8, -5) == -13
+    
 
 
 def test_sottrazione():
