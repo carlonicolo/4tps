@@ -11,13 +11,17 @@ def mult(a, b):
 # crea una funzione che calcola l'area di un quadrato
 # computeAreaQuadrato(lato1, lato2)
 # ritorna l'area del quadrato
-def computeAreaQuadrato(lato1, lato2):
-    pass
+def computeAreaQuadrato(lato1):
+    area = lato1 * lato1
+    return area
 
 #TODO
 # crea una funzione che dato un nome di persona come parametro
 # ritorna: "Ciao <nome_passato_come_parametro>"
 # saluta(nome)
+def saluta(nome):
+    saluto = "Ciao " + nome
+    return saluto
 
 
 a = 0
