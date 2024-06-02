@@ -1,21 +1,54 @@
 CC=g++
 
-all: avg oddsevens findTerm palindrome reverse
 
-avg: avg.cpp
-	$(CC) -Wall -o avg avg.cpp
+all: startCompiling bool numbers simpleStrings doubleNumber checkvowel \
+ divisible divisibleTwo logicWithStrings loopBreak nestedLoop \
+ simpleLogic sumLoop endCompiling
 
-oddsevens: oddsevens.cpp
-	$(CC) -Wall -o oddsevens oddsevens.cpp
+startCompiling:
+	@echo "### Compiling... ###"
 
-findTerm: findTerm.cpp
-	$(CC) -Wall -o findTerm findTerm.cpp
+bool: bool.cpp
+	$(CC) -Wall -o bool bool.cpp
 
-palindrome: palindrome.cpp
-	$(CC) -Wall -o palindrome palindrome.cpp
+numbers: numbers.cpp
+	$(CC) -Wall -o numbers numbers.cpp
 
-reverse: reverse.cpp
-	$(CC) -Wall -o reverse reverse.cpp
+simpleStrings: simpleStrings.cpp
+	$(CC) -Wall -o simpleStrings simpleStrings.cpp
 
-clean : 
+doubleNumber: doubleNumber.cpp
+	$(CC) -Wall -o doubleNumber doubleNumber.cpp
+
+checkvowel: checkvowel.cpp
+	$(CC) -Wall -o checkvowel checkvowel.cpp
+
+divisible: divisible.cpp
+	$(CC) -Wall -o divisible divisible.cpp
+
+divisibleTwo: divisibleTwo.cpp
+	$(CC) -Wall -o divisibleTwo divisibleTwo.cpp
+
+logicWithStrings: logicWithStrings.cpp
+	$(CC) -Wall -o logicWithStrings logicWithStrings.cpp
+
+loopBreak: loopBreak.cpp
+	$(CC) -Wall -o loopBreak loopBreak.cpp
+
+nestedLoop: nestedLoop.cpp
+	$(CC) -Wall -o nestedLoop nestedLoop.cpp
+
+simpleLogic: simpleLogic.cpp
+	$(CC) -Wall -o simpleLogic simpleLogic.cpp
+
+sumLoop: sumLoop.cpp
+	$(CC) -Wall -o sumLoop sumLoop.cpp
+
+endCompiling:
+	@echo "### End Compiling ###"
+
+clean : cleaningMessage
 	rm *.exe
+
+cleaningMessage:
+	@echo "Cleaning..."
