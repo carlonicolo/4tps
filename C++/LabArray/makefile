@@ -1,21 +1,30 @@
 CC=g++
 
-all: avg oddsevens findTerm palindrome reverse
+all: startCompiling interactiveVector reverseVector simpleArray simpleVector vectorMatrix endCompiling 
 
-avg: avg.cpp
-	$(CC) -Wall -o avg avg.cpp
+startCompiling:
+	@echo "### Compiling... ###"
 
-oddsevens: oddsevens.cpp
-	$(CC) -Wall -o oddsevens oddsevens.cpp
+interactiveVector: interactiveVector.cpp
+	$(CC) -Wall -o interactiveVector interactiveVector.cpp
 
-findTerm: findTerm.cpp
-	$(CC) -Wall -o findTerm findTerm.cpp
+reverseVector: reverseVector.cpp
+	$(CC) -Wall -o reverseVector reverseVector.cpp
 
-palindrome: palindrome.cpp
-	$(CC) -Wall -o palindrome palindrome.cpp
+simpleArray: simpleArray.cpp
+	$(CC) -Wall -o simpleArray simpleArray.cpp
 
-reverse: reverse.cpp
-	$(CC) -Wall -o reverse reverse.cpp
+simpleVector: simpleVector.cpp
+	$(CC) -Wall -o simpleVector simpleVector.cpp
 
-clean : 
+vectorMatrix: vectorMatrix.cpp
+	$(CC) -Wall -o vectorMatrix vectorMatrix.cpp
+
+endCompiling:
+	@echo "### End Compiling ###"
+
+clean : cleaningMessage
 	rm *.exe
+
+cleaningMessage:
+	@echo "Cleaning..."
