@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-03 08:49:52 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjMtMTEtMDI7IjA4OjA0OjQ1ICI7MzA3OA=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjMtMTEtMDM7IjA4OjQ5OjUyICI7MjszMTk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <declare name="res" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il primo numero&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Inserisci il secondo numero&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="res" expression="num1+num2"/>
+            <output expression="&quot;La somma dei due numeri inseriti &#232;: &quot; &amp; res" newline="True"/>
+            <if expression="res &gt;= 50">
+                <then>
+                    <output expression="&quot;I due prodotti sono troppo cari !&quot;" newline="True"/>
+                    <if expression="res &gt;= 100">
+                        <then>
+                            <output expression="&quot;Sono costosissimi !!!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Sono costosi ma potrei farcela a comprarli&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;I due prodotti sono accessibili&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-10 11:09:21 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjMtMTEtMDk7IjA4OjU3OjAyICI7MzA4Ng=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjMtMTEtMTA7IjExOjA5OjIxICI7MzM7MzIzMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sceltamenu, num1, num2, risultato" type="Integer" array="False" size=""/>
+            <declare name="risultatoreal" type="Real" array="False" size=""/>
+            <declare name="exit" type="Boolean" array="False" size=""/>
+            <assign variable="exit" expression="False"/>
+            <assign variable="sceltamenu" expression="0"/>
+            <while expression="sceltamenu != -1 &amp;&amp; exit != True">
+                <assign variable="risultato" expression="0"/>
+                <assign variable="risultatoreal" expression="0.0"/>
+                <output expression="&quot;Menu&quot;" newline="True"/>
+                <output expression="&quot;Scegli l'operazione tra quelle disponibili inserendo il numero corrispondente&quot;" newline="True"/>
+                <output expression="&quot;Inserisci i due numeri sui quali vuoi effettuare l'operazione che sceglierai dal men&#249;&quot;" newline="True"/>
+                <output expression="&quot;Inserisci il primo numero: &quot;" newline="True"/>
+                <input variable="num1"/>
+                <output expression="&quot;Inserisci il secondo numero: &quot;" newline="True"/>
+                <input variable="num2"/>
+                <output expression="&quot;Scegli un'operazione dal men&#249;&quot;" newline="True"/>
+                <output expression="&quot;1 - Addizione&quot;" newline="True"/>
+                <output expression="&quot;2 - Sottrazione&quot;" newline="True"/>
+                <output expression="&quot;3 - Moltiplicazione&quot;" newline="True"/>
+                <output expression="&quot;4 - Divisione&quot;" newline="True"/>
+                <output expression="&quot;5 - potenza di num1 elevato a num2&quot;" newline="True"/>
+                <output expression="&quot;6 - percentuale num1 di num2&quot;" newline="True"/>
+                <output expression="&quot;INSERISCI -1 PER USCIRE&quot;" newline="True"/>
+                <input variable="sceltamenu"/>
+                <if expression="sceltamenu == 1">
+                    <then>
+                        <output expression="&quot;Hai selezionato la somma&quot;" newline="True"/>
+                        <assign variable="risultato" expression="somma(num1, num2)"/>
+                        <output expression="&quot;Il risultato dell'operazione somma &#232;: &quot; &amp; risultato" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="sceltamenu == 2">
+                            <then>
+                                <output expression="&quot;Hai selezionato la sottrazione&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="sceltamenu == 3">
+                                    <then>
+                                        <output expression="&quot;Hai scelto la moltiplicazione&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="sceltamenu == 4">
+                                            <then>
+                                                <output expression="&quot;Hai scelto la divisione&quot;" newline="True"/>
+                                                <assign variable="risultatoreal" expression="divisione(num1, num2)"/>
+                                                <output expression="&quot;Il risultato dell'operazione divisione &#232;: &quot; &amp; risultatoreal" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <if expression="sceltamenu == 5">
+                                                    <then>
+                                                        <output expression="&quot;Hai scelto la potenza&quot;" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="sceltamenu == 6">
+                                                            <then>
+                                                                <output expression="&quot;Hai scelto la percentuale&quot;" newline="True"/>
+                                                            </then>
+                                                            <else>
+                                                                <output expression="&quot;Mi dispiace l'operazione selezionata non esiste&quot;" newline="True"/>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <if expression="sceltamenu == -1">
+                    <then>
+                        <assign variable="exit" expression="true"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <output expression="&quot;Good bye&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="divisione" type="Real" variable="risultatoreal">
+        <parameters>
+            <parameter name="num1" type="Integer" array="False"/>
+            <parameter name="num2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="risultatoreal" type="Real" array="False" size=""/>
+            <assign variable="risultatoreal" expression="num1/num2"/>
+        </body>
+    </function>
+    <function name="somma" type="Integer" variable="risultato">
+        <parameters>
+            <parameter name="num1" type="Integer" array="False"/>
+            <parameter name="num2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="risultato" type="Integer" array="False" size=""/>
+            <assign variable="risultato" expression="num1 + num2"/>
+        </body>
+    </function>
+</flowgorithm>

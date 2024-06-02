@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 08:50:46 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjMtMTAtMDM7IjA4OjQyOjU2ICI7MzA4Mg=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjMtMTAtMDM7IjA4OjUwOjQ2ICI7MTszMTg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <assign variable="num1" expression="5"/>
+            <assign variable="num2" expression="10"/>
+            <output expression="num1 * num2" newline="True"/>
+        </body>
+    </function>
+    <function name="displayName" type="None" variable="">
+        <parameters>
+            <parameter name="name" type="String" array="False"/>
+        </parameters>
+        <body/>
+    </function>
+    <function name="Start" type="None" variable="">
+        <parameters>
+            <parameter name="name" type="String" array="False"/>
+        </parameters>
+        <body/>
+    </function>
+</flowgorithm>
