@@ -23,3 +23,6 @@ print(lst_voti[0])
 print(len(lst_voti))
 print(lst_voti[-1])
 print(lst_voti[1:3])
+
+greeting = "Ciao"
+print("Here -> ", greeting)
