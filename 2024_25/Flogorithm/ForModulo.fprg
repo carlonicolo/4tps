@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-17 09:22:57 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMTY7IjExOjM1OjMwICI7MzA4Mw=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMTc7IjA5OjIyOjU3ICI7MTQ7MzI1Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Questo programma utilizza un ciclo per esaminare un array di interi e dirci quanti numeri pari e quanti numeri dispari sono presenti"/>
+            <declare name="lst" type="Integer" array="True" size="4"/>
+            <assign variable="lst[0]" expression="3"/>
+            <assign variable="lst[1]" expression="4"/>
+            <assign variable="lst[2]" expression="7"/>
+            <assign variable="lst[3]" expression="8"/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <assign variable="index" expression="0"/>
+            <declare name="numpari" type="Integer" array="False" size=""/>
+            <assign variable="numpari" expression="0"/>
+            <declare name="numdispari" type="Integer" array="False" size=""/>
+            <assign variable="numdispari" expression="0"/>
+            <for variable="index" start="0" end="3" direction="inc" step="1">
+                <if expression="(lst[index] MOD 2) == 0">
+                    <then>
+                        <output expression="&quot;Pari&quot;" newline="True"/>
+                        <assign variable="numpari" expression="numpari + 1"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Dispari&quot;" newline="True"/>
+                        <assign variable="numdispari" expression="numdispari + 1"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Nell'array lst[] sono prsenti &quot; &amp; numpari &amp; &quot; numeri pari e &quot;  &amp; numdispari &amp; &quot; numeri dispari&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

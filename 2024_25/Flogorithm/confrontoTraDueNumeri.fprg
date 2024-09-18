@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-18 10:17:13 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMTg7IjEwOjA3OjQwICI7MzA4NA=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMTg7IjEwOjE3OjEzICI7NzszMTk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Semplice esempio di confronto tra due numeri.&#13;&#10;Stampa il numero pi&#249; grande"/>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci un valore intero: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Inserisci un secondo numero intero: &quot;" newline="True"/>
+            <input variable="num2"/>
+            <if expression="num1 &gt; num2">
+                <then>
+                    <output expression="&quot;La variabile num1 &#232; maggiore della variabile num2&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;La variabile num2 &#232; maggiore della variabile num1&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
