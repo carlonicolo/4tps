@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-19 11:45:12 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMTk7IjEwOjE2OjQ3ICI7MzA5Mg=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMTk7IjExOjQ1OjEyICI7MjA7MzI0NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lstoperazioni" type="Integer" array="True" size="3"/>
+            <assign variable="lstoperazioni[0]" expression="0"/>
+            <assign variable="lstoperazioni[1]" expression="1"/>
+            <assign variable="lstoperazioni[2]" expression="2"/>
+            <declare name="flag" type="Integer" array="False" size=""/>
+            <assign variable="flag" expression="-1"/>
+            <declare name="choice" type="Integer" array="False" size=""/>
+            <while expression="flag != 0">
+                <output expression="&quot;Scegli un'operazione dal men&#249; inserendo il numero corrispondente: &#13;&#10;&#13;&#10;1 - Somma &#13;&#10;2 - Prodotto &#13;&#10;3 - Differenza &#13;&#10;0 - exit &#13;&#10;&quot;" newline="True"/>
+                <input variable="choice"/>
+                <if expression="choice == 0">
+                    <then>
+                        <assign variable="flag" expression="0"/>
+                    </then>
+                    <else>
+                        <if expression="choice == 1">
+                            <then>
+                                <output expression="&quot;OPERAZIONE SOMMA&#13;&#10;Insersci i due numeri da sommare&#13;&#10;&quot;" newline="True"/>
+                                <declare name="val1" type="Integer" array="False" size=""/>
+                                <declare name="val2" type="Integer" array="False" size=""/>
+                                <output expression="&quot;Inserisci val1: &quot;" newline="True"/>
+                                <input variable="val1"/>
+                                <output expression="&quot;Inserisci val2: &quot;" newline="True"/>
+                                <input variable="val2"/>
+                                <declare name="risultato" type="Integer" array="False" size=""/>
+                                <assign variable="risultato" expression="somma(val1, val2)"/>
+                                <output expression="&quot;Il risultato della somma &#232;: &quot; &amp; risultato" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="choice == 2">
+                                    <then>
+                                        <output expression="&quot;OPERAZIONE PRODOTTO&#13;&#10;Inserisci i due numeri da moltiplicare&#13;&#10;&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="choice == 3">
+                                            <then>
+                                                <output expression="&quot;OPERAZIONE DIFFERENZA&#13;&#10;Inserisci i due numeri da moltiplicare&#13;&#10;&quot;" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;OPZIONE NON VALIDA&quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+    <function name="somma" type="Integer" variable="result">
+        <parameters>
+            <parameter name="add1" type="Integer" array="False"/>
+            <parameter name="add2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <assign variable="result" expression="add1 + add2"/>
+        </body>
+    </function>
+</flowgorithm>

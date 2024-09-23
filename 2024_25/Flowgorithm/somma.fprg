@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-23 07:58:30 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMTg7IjExOjQ2OjAwICI7MzA4NA=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMDktMjM7IjA3OjU4OjMwICI7MjszMjAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Semplice programma somma di due interi"/>
+            <declare name="numero1" type="Integer" array="False" size=""/>
+            <declare name="numero2" type="Integer" array="False" size=""/>
+            <assign variable="numero1" expression="5"/>
+            <assign variable="numero2" expression="8"/>
+            <declare name="somma" type="Integer" array="False" size=""/>
+            <assign variable="somma" expression="numero1 + numero2"/>
+            <output expression="&quot;La somma &#232;: &quot; &amp; somma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
