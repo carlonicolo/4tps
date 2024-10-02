@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-02 09:46:39 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMTAtMDI7IjA5OjM3OjQ4ICI7MzA4OA=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMTAtMDI7IjA5OjQ2OjM5ICI7NTszMjAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <declare name="resSomma" type="Integer" array="False" size=""/>
+            <assign variable="num1" expression="5"/>
+            <assign variable="num2" expression="10"/>
+            <assign variable="resSomma" expression="somma(num1,num2)"/>
+            <output expression="&quot;La somma &#232;: &quot; &amp; resSomma" newline="True"/>
+        </body>
+    </function>
+    <function name="somma" type="Integer" variable="risultatoSomma">
+        <parameters>
+            <parameter name="num1" type="Integer" array="False"/>
+            <parameter name="num2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="risultatoSomma" type="Integer" array="False" size=""/>
+            <assign variable="risultatoSomma" expression="num1 + num2"/>
+        </body>
+    </function>
+</flowgorithm>
