@@ -23,11 +23,11 @@ Che tipo di motorizzazione preferisce?
 - 2 - diesel  
 - 3 - benzina  
 
-[Digitare il numero in corrispondenza dell'auto scelta: esempio 1 per eletrica]
+[Digitare il numero in corrispondenza dell'auto scelta: esempio 2 per diesel]
 
 Grazie per la sua scelta:  
 
-BMW - elettrica  
+BMW - diesel  
 
 NB:
 
