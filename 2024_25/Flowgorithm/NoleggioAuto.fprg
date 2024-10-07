@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Karlitos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-03 11:51:02 "/>
+        <attribute name="created" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMTAtMDM7IjExOjExOjQ5ICI7MzA3NQ=="/>
+        <attribute name="edited" value="S2FybGl0b3M7REVTS1RPUC1CN0VPQkw4OzIwMjQtMTAtMDM7IjExOjUxOjAyICI7ODszMTgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Programma che gestisce il nologgio auto.&#13;&#10;Propone la scelta tra 2 o pi&#249; marche di auto e per ciascuna 2 motorizzazione tra le quali scegliere.&#13;&#10;Funzione calcola il costo del noleggio &#13;&#10;Funzione riepilogo scelte&#13;&#10;"/>
+            <declare name="listaAuto" type="String" array="True" size="2"/>
+            <assign variable="listaAuto[0]" expression="&quot;BMW&quot;"/>
+            <assign variable="listaAuto[1]" expression="&quot;Mercedes&quot;"/>
+            <declare name="mcinque" type="String" array="False" size=""/>
+            <assign variable="mcinque" expression="&quot;M5&quot;"/>
+            <declare name="mtre" type="String" array="False" size=""/>
+            <assign variable="mtre" expression="&quot;M3&quot;"/>
+            <declare name="classeC" type="String" array="False" size=""/>
+            <declare name="classeE" type="String" array="False" size=""/>
+            <assign variable="classeC" expression="&quot;Classe C&quot;"/>
+            <assign variable="classeE" expression="&quot;Classe E&quot;"/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <assign variable="index" expression="0"/>
+            <output expression="&quot;Scegli la marca dell'auto da noleggiare: &quot;" newline="True"/>
+            <for variable="index" start="0" end="1" direction="inc" step="1">
+                <output expression="listaAuto[index]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
