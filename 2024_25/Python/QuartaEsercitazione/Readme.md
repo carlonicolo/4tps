@@ -7,24 +7,27 @@ Una volta che l'utente ha scelto il modello ed il tipo di alimentazione, stampar
 Esempio:
 
 Quale macchina vuole noleggiare tra:
-1 - BMW
-2 - Mercedes
-3 - Tesla
-4 - Volvo
-5 - Ferrari
-6 - Maserati
+
+- 1 - BMW  
+- 2 - Mercedes  
+- 3 - Tesla  
+- 4 - Volvo  
+- 5 - Ferrari  
+- 6 - Maserati  
 
 [Digitare il numero in corrispondenza dell'auto scelta: esempio 1 per BMW]  
 
 Che tipo di motorizzazione preferisce?
-1 - elettrica
-2 - diesel
-3 - benzina
+
+- 1 - elettrica  
+- 2 - diesel  
+- 3 - benzina  
 
 [Digitare il numero in corrispondenza dell'auto scelta: esempio 1 per eletrica]
 
-Grazie per la sua scelta:
-BMW - elettrica
+Grazie per la sua scelta:  
+
+BMW - elettrica  
 
 NB:
 
