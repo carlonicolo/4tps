@@ -1,12 +1,16 @@
-# Creare un programma, utilizando il linguaggio di programmazione preferito, di noleggio auto  
+# Noleggio auto  
 
-Il programma chiede all'utente di scegliere il modello ed il tipo di alimentazione dell'auto che l'utente vuole noleggiare mostrando delle opzioni tra le quali scegliere.  
-  
-Una volta che l'utente ha scelto il modello ed il tipo di alimentazione, stampare a video la scelta fatta dall'utente.
 
-Esempio:
+Esempio:  
 
-Quale macchina vuole noleggiare tra:
+**Benvenuto in 4tps Noleggio SRL**  
+-> Sei un utente registrato? (si/no)
+-> Inserisci nome utente  
+-> Inserisci password  
+
+-> Ciao Pluto bentornato  
+-> Riconsegna (r) o Noleggio (n)  
+-> (n) Quale macchina vuole noleggiare tra:
 
 - 1 - BMW  
 - 2 - Mercedes  
@@ -33,3 +37,18 @@ NB:
 
 - l'alimentazione elettrica è disponibile solo per la Tesla  
 - la Ferrari non esiste diesel  
+
+
+### Riconsegna  
+-> Auto noleggiata: BMW  
+-> Km percorsi: 2300  
+-> Giorni noleggio: 3  
+-> Importo: 230€  
+
+### TASK
+- funzione registrazione nuovo utente;
+- funzione calcolo randomizzato dell'auto noleggiata;  
+- funzione calcolo randomizzato km percorsi;
+- funzione random giorni noleggio
+- visualizza ricevuta riconsegna
+- visualizza prospetto noleggio
