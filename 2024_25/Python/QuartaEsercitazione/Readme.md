@@ -1,6 +1,5 @@
 # Noleggio auto  
 
-
 Esempio:  
 
 **Benvenuto in 4tps Noleggio SRL**  
@@ -38,17 +37,19 @@ NB:
 - l'alimentazione elettrica è disponibile solo per la Tesla  
 - la Ferrari non esiste diesel  
 
+## Riconsegna
 
-### Riconsegna  
 -> Auto noleggiata: BMW  
 -> Km percorsi: 2300  
 -> Giorni noleggio: 3  
 -> Importo: 230€  
 
-### TASK
+## TASK
+
 - funzione registrazione nuovo utente;
 - funzione calcolo randomizzato dell'auto noleggiata;  
 - funzione calcolo randomizzato km percorsi;
 - funzione random giorni noleggio
 - visualizza ricevuta riconsegna
 - visualizza prospetto noleggio
+  
