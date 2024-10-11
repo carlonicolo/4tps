@@ -59,8 +59,6 @@ def showDatiNoleggio(lst_ricevuta: list, lst_val_noleggio: list):
     # convert the list of key-value pairs to a dictionary
     my_dict = dict(key_value_pairs)
 
-    #print(my_dict)
-    # Output: {'apple': 3, 'banana': 6, 'orange': 4}
     print("")
     print("### Dati noleggio ###")
     for key, value in my_dict.items() :
