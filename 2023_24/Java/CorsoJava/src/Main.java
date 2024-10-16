@@ -23,6 +23,12 @@ public class Main {
         String sal = zig.salutaNome("Kevin");
         System.out.println(sal);
 
+        Animale pippo = new Animale("Pluto",18,50,4,"nero");
+        pippo.abbaia();
+        String pippo_greeting = pippo.salutaNome("ragazzi!!!");
+        System.out.println(pippo_greeting);
+        System.out.println(pippo.getNome());
+
         //Veicolo macchina1 = new Veicolo(2023, "elettrica", "Tesla");
         //System.out.println(macchina1);
         //System.out.println("Marca: " + macchina1.getMarca());

@@ -5,8 +5,18 @@ public class Animale {
     private int eta;
     private float peso;
     private int num_zampe;
+    private String colore;
+
+    public Animale(String nome, int eta, int peso, int num_zampe, String colore) {
+        this.nome = nome;
+        this.eta = eta;
+        this.peso = peso;
+        this.num_zampe = num_zampe;
+        this.colore = colore;
+    }
 
     public Animale(String nome, int eta, int peso, int num_zampe) {
+        this.nome = nome;
         this.eta = eta;
         this.peso = peso;
         this.num_zampe = num_zampe;
@@ -60,4 +70,11 @@ public class Animale {
     }
 
 
+    public String getColore() {
+        return colore;
+    }
+
+    public void setColore(String colore) {
+        this.colore = colore;
+    }
 }
