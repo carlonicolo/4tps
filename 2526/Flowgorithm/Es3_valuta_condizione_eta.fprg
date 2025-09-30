@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es3_valuta_condizione_eta"/>
+        <attribute name="authors" value="carlo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-18 08:24:20 "/>
+        <attribute name="created" value="Y2FybG87SlVaQTsyMDI1LTA5LTE4OyIwODoxMjoyMCAiOzIwMzg="/>
+        <attribute name="edited" value="Y2FybG87SlVaQTsyMDI1LTA5LTE4OyIwODoyNDoyMCAiOzQ7MjE1Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This is a simple program that ask the age to the user and then evaulate if is +18 or not.&#13;&#10;Yes -&gt; &quot;Cool&quot;&#13;&#10;No -&gt; &quot;Forbidden&quot;"/>
+            <declare name="eta" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please insert your age: &quot;" newline="True"/>
+            <input variable="eta"/>
+            <if expression="eta &gt;= 18">
+                <then>
+                    <output expression="&quot;Cool !!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Forbidden&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

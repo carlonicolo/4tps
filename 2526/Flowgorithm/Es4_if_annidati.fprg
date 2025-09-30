@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es4_if_annidati"/>
+        <attribute name="authors" value="carlo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-18 09:11:35 "/>
+        <attribute name="created" value="Y2FybG87SlVaQTsyMDI1LTA5LTE4OyIwODo1MjoyMCAiOzIwNDI="/>
+        <attribute name="edited" value="Y2FybG87SlVaQTsyMDI1LTA5LTE4OyIwOToxMTozNSAiOzI7MjE1Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <output expression="&quot;First value: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Second value: &quot;" newline="True"/>
+            <input variable="num2"/>
+            <if expression="num1 &gt; num2">
+                <then>
+                    <output expression="num1 &amp; &quot; is &gt; of &quot; &amp; num2" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="num1" expression="num1 + 5"/>
+                    <if expression="num1 &gt; num2">
+                        <then>
+                            <output expression="num1 &amp; &quot; is &gt; of &quot; &amp; num2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="num1 &amp; &quot; is smaller than &quot; &amp; num2" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

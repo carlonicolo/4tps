@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es3_valuta_condizione_given_number"/>
+        <attribute name="authors" value="carlo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-18 08:49:28 "/>
+        <attribute name="created" value="Y2FybG87SlVaQTsyMDI1LTA5LTE4OyIwODoyNTozMCAiOzIwNDM="/>
+        <attribute name="edited" value="Y2FybG87SlVaQTsyMDI1LTA5LTE4OyIwODo0OToyOCAiOzI7MjE2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This is a simple program that ask to the user to insert a value and then evaluate if this value is &gt; or &lt; of 10&#13;&#10;Yes -&gt; &quot;WoW&quot;&#13;&#10;No -&gt; &quot;OH no !&quot;"/>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <assign variable="num" expression="10"/>
+            <declare name="eval" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please insert an integer value: &quot;" newline="True"/>
+            <input variable="eval"/>
+            <if expression="eval &gt; num">
+                <then>
+                    <output expression="&quot;WoW&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Oh no !&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
